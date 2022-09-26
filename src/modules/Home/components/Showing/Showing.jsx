@@ -78,12 +78,13 @@ const MovieShotimes = () => {
         onChange={handleChange}
         total={movies?.totalPages - 1}
         radius="sm"
-        spacing="md"
+        spacing="sm"
         position="center"
         color="red"
         sx={(theme) => ({
-          [`@media (max-width: ${theme.breakpoints.xs}px)`]: {
+          [`@media (max-width: ${theme.breakpoints.sm}px)`]: {
             padding: "0 5px",
+            noWrap: "false",
           },
         })}
       />
