@@ -81,7 +81,11 @@ const MovieShotimes = () => {
         spacing="md"
         position="center"
         color="red"
-        mx={20}
+        sx={(theme) => ({
+          [`@media (max-width: ${theme.breakpoints.xs}px)`]: {
+            padding: "0 5px",
+          },
+        })}
       />
     </Container>
   );
