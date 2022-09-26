@@ -20,8 +20,8 @@ const MovieShotimes = () => {
     setPage(page);
   };
   return (
-    <Container id="showing" size="lg">
-      <Grid gutter={24} mt={30} mb={20}>
+    <Container mt={30} id="showing" size="lg">
+      <Grid gutter={24} mb={20}>
         {movies?.items.map((movie) => {
           return (
             <Grid.Col key={movie.maPhim} xs={6} sm={4} md={3} lg={3}>
@@ -81,6 +81,7 @@ const MovieShotimes = () => {
         spacing="md"
         position="center"
         color="red"
+        mx={20}
       />
     </Container>
   );

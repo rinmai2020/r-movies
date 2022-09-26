@@ -5,14 +5,14 @@ import Cinema from "../components/Cinema";
 import Showing from "../components/Showing";
 
 const Home = () => {
-	return (
-		<div>
-			<Banner />
-			<Showing />
-			<Cinema />
-			<GoToTop />
-		</div>
-	);
+  return (
+    <div>
+      <Banner />
+      <Showing />
+      <Cinema />
+      <GoToTop />
+    </div>
+  );
 };
 
 export default Home;
