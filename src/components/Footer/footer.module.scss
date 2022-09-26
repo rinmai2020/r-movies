@@ -1,0 +1,149 @@
+.footer {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 20px 0 10px;
+
+	.details {
+		display: flex;
+		justify-content: space-between;
+
+		h1 {
+			color: #eee;
+			font-size: 20px;
+			font-weight: 500;
+			margin-bottom: 30px;
+		}
+
+		.appItem {
+			.hotline {
+				display: flex;
+				justify-content: flex-start;
+				align-items: flex-start;
+
+				.app {
+					color: gray;
+					font-size: 30px;
+					margin-right: 5px;
+					width: 30px;
+					height: 30px;
+					line-height: 30px;
+					&:hover {
+						color: #eee;
+					}
+				}
+			}
+		}
+
+		.faqItem {
+			a {
+				color: #eee;
+				text-decoration: none;
+				display: block;
+				margin-bottom: 10px;
+			}
+		}
+
+		.cinemaItem {
+			.cinemaList {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				.image {
+					width: 40px;
+					height: 40px;
+					margin-right: 10px;
+					transition: all 0.5s;
+					.theater {
+						text-decoration: none;
+						img {
+							width: 100%;
+							height: 100%;
+							border-radius: 50%;
+						}
+					}
+					&:hover {
+						transform: translateY(-5px);
+					}
+				}
+			}
+		}
+
+		.mobileItem {
+			.mobileApp {
+				display: flex;
+
+				.store {
+					color: #eee;
+					text-decoration: none;
+					font-size: 40px;
+					width: 40px;
+					height: 40px;
+					line-height: 40px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.footer {
+		.details {
+			h1 {
+				font-size: 16px;
+			}
+
+			.cinemaItem {
+				.cinemaList {
+					.image {
+						width: 30px;
+						height: 30px;
+					}
+				}
+			}
+
+			.mobileItem {
+				.mobileApp {
+					.store {
+						font-size: 30px;
+						width: 30px;
+						height: 30px;
+						line-height: 30px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.footer {
+		.details {
+			flex-wrap: wrap;
+			.appItem,
+			.faqItem,
+			.cinemaItem,
+			.mobileItem {
+				margin-bottom: 30px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.footer {
+		.details {
+			flex-direction: column;
+
+			h1 {
+				margin-bottom: 15px;
+			}
+
+			.cinemaItem {
+				.cinemaList {
+					justify-content: flex-start;
+				}
+			}
+		}
+	}
+}

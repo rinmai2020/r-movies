@@ -1,0 +1,19 @@
+.mainHeader {
+	background: rgba(255, 255, 255, 0.9);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	border-bottom: 1px solid #999;
+	z-index: 9999;
+}
+
+.mainFooter {
+	background: url("../../assets/img/footer.png") center / cover no-repeat;
+}
+
+@media screen and (max-width: 576px) {
+	.mainHeader {
+		padding: 0 20px;
+	}
+}

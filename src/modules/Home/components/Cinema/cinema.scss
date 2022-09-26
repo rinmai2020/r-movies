@@ -1,0 +1,256 @@
+.cinema {
+	.cinema-system-mobile {
+		display: none;
+	}
+
+	.cinema-system {
+		border: 1px solid rgba(0, 0, 0, 0.1);
+		border-radius: 10px;
+		max-height: 900px;
+		overflow: hidden;
+		.cinema-logo {
+			height: 100px;
+			line-height: 100px;
+		}
+
+		.cinema-info {
+			text-align: left;
+			white-space: normal;
+			width: 300px;
+			height: 100px;
+
+			.cinema-name,
+			.cinema-address,
+			.cinema-detail {
+				margin-bottom: 0;
+			}
+
+			.cinema-name {
+				color: #fa5252;
+				font-size: 18px;
+			}
+
+			.cinema-address {
+				margin: 2px 0;
+			}
+
+			.cinema-detail {
+				color: #b80315;
+			}
+		}
+
+		.cinema-scroll {
+			height: 900px;
+			overflow-y: scroll;
+			&::-webkit-scrollbar-track {
+				border-radius: 10px;
+				background-color: #f5f5f5;
+			}
+			&::-webkit-scrollbar {
+				width: 10px;
+				background-color: #f5f5f5;
+			}
+			&::-webkit-scrollbar-thumb {
+				border-radius: 10px;
+				background-color: rgba(0, 0, 0, 0.3);
+				display: none;
+			}
+			&:hover::-webkit-scrollbar-thumb {
+				display: block;
+			}
+			.cinema-img {
+				display: flex;
+				flex-direction: column;
+				width: 140px;
+				height: 200px;
+				img {
+					height: 100%;
+				}
+			}
+			.cinema-film {
+				display: flex;
+				margin-bottom: 20px;
+				padding: 15px 20px;
+				.cinema-title {
+					margin-left: 20px;
+					h1 {
+						font-size: 18px;
+						font-weight: 500;
+						margin-bottom: 20px;
+						line-height: 1.6em;
+						.cinema-sub {
+							background: #fa5252;
+							color: #fff;
+							font-size: 14px;
+							font-weight: 500;
+							border-radius: 5px;
+							margin-right: 10px;
+							padding: 4px 5px;
+						}
+					}
+					.cinema-date {
+						margin: 5px 10px 10px 0;
+						padding: 5px 8px;
+						border: 1px solid rgba(0, 0, 0, 0.2);
+						outline: none;
+						border-radius: 4px;
+						color: #fa5252;
+						font-size: 15px;
+						font-weight: 500;
+						opacity: 0.8;
+						cursor: pointer;
+						&:hover {
+							opacity: 1;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.ant-tabs-tab {
+	margin-top: 0 !important;
+	border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.ant-tabs-tab:hover {
+	color: unset;
+}
+
+.ant-tabs-nav-list {
+	border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+	color: #363636 !important;
+	font-weight: 500;
+}
+
+.ant-tabs-tabpane {
+	padding-left: 0 !important;
+}
+
+.ant-tabs-ink-bar {
+	position: absolute;
+	background: #fa5252;
+	pointer-events: none;
+}
+
+// @media screen and (max-width: 992px) {
+//   .cinema {
+//     .cinema-info {
+//       height: 100px !important;
+
+//       .cinema-name {
+//         margin-top: 20px;
+//         font-size: 15px;
+//       }
+//     }
+
+//     .cinema-date {
+//       font-size: 14px !important;
+//     }
+
+//     .ant-tabs-tab {
+//       padding: 5px 10px !important;
+//       height: 100px;
+//     }
+//   }
+// }
+
+@media screen and (max-width: 768px) {
+	.cinema {
+		.cinema-scroll {
+			&::-webkit-scrollbar-track {
+				border-radius: 10px;
+				background-color: #dbd8d8 !important;
+			}
+			&::-webkit-scrollbar-thumb {
+				border-radius: 10px;
+				background-color: rgba(0, 0, 0, 0.3);
+				display: block !important;
+			}
+
+			.cinema-film {
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				border-bottom: 1px dotted #000;
+
+				.cinema-title {
+					text-align: center;
+					font-size: 15px;
+					margin-top: 10px;
+				}
+			}
+		}
+
+		.tab-info {
+			.ant-tabs-nav {
+				width: 200px;
+
+				.cinema-info {
+					width: 100%;
+
+					.cinema-address {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.cinema {
+		margin: 0 10px 50px;
+		.cinema-system {
+			display: none;
+		}
+
+		.cinema-system-mobile {
+			display: block;
+			height: auto;
+
+			.ant-collapse > .ant-collapse-item > .ant-collapse-header {
+				line-height: 2;
+			}
+
+			.cinema-info-mobile {
+				.cinema-name-mobile {
+					font-size: 16px;
+					color: #fa5252;
+					margin-bottom: 5px;
+				}
+
+				.cinema-address-mobile {
+					margin-bottom: 5px;
+				}
+
+				.cinema-detail-mobile {
+					color: #fa5252;
+				}
+			}
+
+			.name-film-mobile {
+				margin-bottom: 5px;
+				color: #fa5252;
+				font-weight: 500;
+			}
+
+			.cinema-date-mobile {
+				margin-bottom: 8px;
+				margin-right: 8px;
+				padding: 5px;
+				border: none;
+				outline: none;
+				border-radius: 4px;
+				background: #fa5252;
+				color: #eee;
+				font-size: 14px;
+				font-weight: 500;
+			}
+		}
+	}
+}

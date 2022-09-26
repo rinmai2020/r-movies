@@ -1,0 +1,180 @@
+.showtimes {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	margin-bottom: 30px;
+	.showtimes-desktop {
+		.ant-col {
+			line-height: 50px;
+			font-size: 16px;
+		}
+
+		.ant-tabs-nav {
+			width: 120px;
+			.showtimes-cinema {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				padding: 5px 0;
+				.showtimes-name-cinema {
+					font-size: 18px;
+					// margin-left: 10px;
+					p {
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+
+		.ant-tabs-ink-bar {
+			position: absolute;
+			background: #fa5252;
+			pointer-events: none;
+		}
+
+		.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+			color: #fa5252 !important;
+			font-weight: 500;
+		}
+
+		.showtimes-scroll {
+			height: 400px;
+			overflow-y: scroll;
+			&::-webkit-scrollbar-track {
+				border-radius: 10px;
+				background-color: #f5f5f5;
+			}
+			&::-webkit-scrollbar {
+				width: 10px;
+				background-color: #f5f5f5;
+			}
+			&::-webkit-scrollbar-thumb {
+				border-radius: 10px;
+				background-color: rgba(0, 0, 0, 0.3);
+				display: none;
+			}
+			&:hover::-webkit-scrollbar-thumb {
+				display: block;
+			}
+
+			.showtimes-complex {
+				padding: 20px 30px 0;
+				.showtimes-name {
+					color: #333;
+					font-size: 20px;
+				}
+
+				.showtimes-date {
+					max-width: 100%;
+					button {
+						margin: 0 20px 20px 0;
+						padding: 5px 8px;
+						border: 1px solid rgba(0, 0, 0, 0.3);
+						border-radius: 4px;
+						color: #fa5252;
+						font-size: 15px;
+						font-weight: 500;
+						opacity: 0.8;
+						cursor: pointer;
+						&:hover {
+							opacity: 1;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.showtimes-mobile {
+		display: none;
+	}
+}
+.mantine-sz575t {
+	padding-left: 0;
+	padding-right: 0;
+}
+@media screen and (max-width: 992px) {
+	.showtimes {
+		// max-width: 800px;
+
+		.ant-tabs-nav {
+			.showtimes-cinema {
+				padding: 0;
+			}
+		}
+
+		.showtimes-scroll {
+			&::-webkit-scrollbar-thumb {
+				display: block;
+			}
+
+			.showtimes-complex {
+				.showtimes-name {
+					font-size: 16px;
+					margin-bottom: 15px;
+				}
+
+				.showtimes-date {
+					button {
+						padding: 5px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.showtimes {
+		.showtimes-desktop {
+			display: none;
+		}
+
+		.showtimes-mobile {
+			display: block;
+
+			.showtimes-cinema-mobile {
+				display: flex;
+				align-items: center;
+
+				.showtimes-name-cinema-mobile {
+					p {
+						margin-bottom: 0;
+						margin-left: 10px;
+						font-size: 16px;
+						font-weight: 500;
+					}
+				}
+			}
+
+			.showtimes-scroll-mobile {
+				text-align: center;
+				.showtimes-complex-mobile {
+					margin: 20px 0;
+					.showtimes-name-mobile {
+						font-size: 16px;
+						color: #888;
+						text-align: left;
+						margin-bottom: 20px;
+					}
+
+					.showtimes-date-mobile {
+						button {
+							margin: 0 20px 20px 0;
+							padding: 5px;
+							border: none;
+							border-radius: 4px;
+							background: orange;
+							color: #eee;
+							font-size: 14px;
+							font-weight: 500;
+						}
+					}
+				}
+			}
+		}
+
+		.ant-collapse > .ant-collapse-item > .ant-collapse-header {
+			align-items: center;
+		}
+	}
+}

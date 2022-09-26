@@ -1,0 +1,20 @@
+.btn-go-top {
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	width: 50px;
+	height: 50px;
+	border: none;
+	border-radius: 50%;
+	background: #dc3545;
+	color: #eee;
+	font-size: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.5s;
+	z-index: 9999;
+	&:hover {
+		transform: translateY(-5px);
+	}
+}

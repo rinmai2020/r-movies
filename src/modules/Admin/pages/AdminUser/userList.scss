@@ -1,0 +1,23 @@
+.user-list {
+	.user-list-details {
+		p {
+			margin-bottom: 0;
+		}
+
+		.user-list-btn {
+			border: none;
+			outline: none;
+			font-size: 25px;
+			background: transparent;
+			margin-right: 10px;
+		}
+
+		.edit {
+			color: rgb(10, 187, 187);
+		}
+
+		.delete {
+			color: red;
+		}
+	}
+}
