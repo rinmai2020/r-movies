@@ -2,7 +2,7 @@ import useRequest from "hooks/useRequest";
 import movieAPI from "apis/movieAPI";
 import { BsPlayCircle } from "react-icons/bs";
 import { Rate } from "antd";
-import { Button, Grid, Container, Modal, Title, Text } from "@mantine/core";
+import { Button, Grid, Modal, Title } from "@mantine/core";
 import moment from "moment";
 import { useState } from "react";
 import "./overview.scss";

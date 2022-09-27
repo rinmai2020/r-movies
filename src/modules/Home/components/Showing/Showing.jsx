@@ -2,7 +2,6 @@ import { useNavigate } from "react-router-dom";
 import useRequest from "hooks/useRequest";
 import movieAPI from "apis/movieAPI";
 import { BsPlayCircle } from "react-icons/bs";
-
 import { Button, Grid, Container, Modal, Pagination } from "@mantine/core";
 import { useState } from "react";
 import "./showing.scss";
