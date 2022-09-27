@@ -83,7 +83,7 @@ const MovieShotimes = () => {
         color="red"
         sx={(theme) => ({
           [`@media (max-width: ${theme.breakpoints.sm}px)`]: {
-            margin: "0 5px",
+            margin: "30 10px",
             noWrap: "false",
           },
         })}
